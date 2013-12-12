@@ -1,0 +1,421 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Universidad Tecnológica Metropolitana, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+ del Estado de Chile
+\end_layout
+
+\begin_layout Author
+Grupo 01: Sebastian Esparza - Diego Navia - Francisco Ramírez 
+\end_layout
+
+\begin_layout Section*
+¿Qué es un patrón de diseño?
+\end_layout
+
+\begin_layout Standard
+Los Patrones de diseño son el esqueleto de las soluciones a problemas comunes
+ en el desarrollo de software.
+ En otras palabras, brindan una solución ya probada a problemas de desarrollo
+ de software que están sujetos a contextos similares.
+ Hay que tener presente los siguientes elementos de un patrón: su nombre,
+ el problema (cuando aplicar un patrón), la solución (descripción abstracta
+ del problema) y las consecuencias (costos y beneficios).
+\end_layout
+
+\begin_layout Standard
+Existen varios patrones de diseños popularmente conocidos, los cuales se
+ clasifican como se muestra a continuación:
+\end_layout
+
+\begin_layout Enumerate
+Patrones Creacionales: Inicialización y configuración de objetos.
+\end_layout
+
+\begin_layout Enumerate
+Patrones Estructurales: Separan la interfaz de la implementación.
+ Se ocupan de cómo las clases y objetos se agrupan, para formar estructuras
+ más grandes.
+\end_layout
+
+\begin_layout Enumerate
+Patrones de Comportamiento: Más que describir objetos o clases, describen
+ la comunicación entre ellos.
+\end_layout
+
+\begin_layout Standard
+Veremos un poco en qué consisten los distintos tipos de patrones, cuáles
+ son sus fines y qué beneficios nos aportan.
+\end_layout
+
+\begin_layout Subsection*
+Patrones Creacionales
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Fábrica
+\lang english
+ Abstracta (Abstract Factory): El problema a solucionar por este patrón
+ es el de crear diferentes familias de objetos, como por ejemplo la creación
+ de interfaces gráficas de distintos tipos (ventana, menú, botón, etc.).
+\end_layout
+
+\begin_layout Itemize
+Método de Fabricación (Factory Method): Parte del principio de que las subclases
+ determinan la clase a implementar
+\end_layout
+
+\begin_layout Itemize
+Prototipado (Prototype): Se basa en la clonación de ejemplares copiándolos
+ de un prototipo.
+\end_layout
+
+\begin_layout Itemize
+Singleton: Restringe la instanciación de una clase o valor de un tipo a
+ un solo objeto.
+\end_layout
+
+\begin_layout Itemize
+MVC (Model View Controller): Este patrón se eligió para ser posteriormente
+ detallado, además de entregar ejemplo de la vida cotidiana.
+\end_layout
+
+\begin_layout Subsection*
+Patrones Estructurales
+\end_layout
+
+\begin_layout Itemize
+Adaptador (Adapter): Convierte una interfaz en otra.
+\end_layout
+
+\begin_layout Itemize
+Puente (Bridge): Desacopla una abstracción de su implementación permitiendo
+ modificarlas independientemente.
+\end_layout
+
+\begin_layout Itemize
+Objeto Compuesto (Composite): Utilizado para construir objetos complejos
+ a partir de otros más simples, utilizando para ello la composición recursiva
+ y una estructura de árbol
+\end_layout
+
+\begin_layout Itemize
+Envoltorio (Decorator): Permite añadir dinámicamente duncionalidad a una
+ clase existente, evitando heredar sucesivas clases para incorporar la nueva
+ funcionalidad.
+\end_layout
+
+\begin_layout Itemize
+Fachada (facade): Permite simplificar la inerfaz para un subsistema.
+\end_layout
+
+\begin_layout Itemize
+Peso Ligero (Flyweight): Elimina la redundancia o la reduce cuando tenemos
+ gran cantidad de objetos con información idéntica.
+\end_layout
+
+\begin_layout Itemize
+Apoderado (Proxy): Un objeto se aproxima a otro
+\end_layout
+
+\begin_layout Subsection*
+Patrones de Comportamiento
+\end_layout
+
+\begin_layout Itemize
+Cadena de responsabilidad (Chain of responsibility): La base es permitir
+ que más de un objeto tenga la posibilidad de atender una petición.
+\end_layout
+
+\begin_layout Itemize
+Orden (Command): Encapsula una petición como un objeto dando la posibilidad
+ de 
+\begin_inset Quotes eld
+\end_inset
+
+deshacer
+\begin_inset Quotes erd
+\end_inset
+
+ la petición.
+\end_layout
+
+\begin_layout Itemize
+Intérprete (Interpreter): Intérprete de lenguaje para una gramática simple
+ y sencilla.
+\end_layout
+
+\begin_layout Itemize
+Iterador (Iterator): Define una interfaz que declara los métodos necesarios
+ para accder secuencialmente a un acolección de objetos sin exponer su estructur
+a interna.
+\end_layout
+
+\begin_layout Itemize
+Mediador (Mediator): Coordina las relaciones entre sus asociados.
+ Permite la interacción de varios objetos, sin generar acoples fuerte en
+ esas relaciones.
+\end_layout
+
+\begin_layout Itemize
+Recuerdo(Memento): Almacena el estado de un objeto y lo restaura posteriormente.
+ 
+\end_layout
+
+\begin_layout Itemize
+Observador (Observer): Notificaciones de cambios de estado de un objeto.
+\end_layout
+
+\begin_layout Itemize
+Estado (Server): Se utiliza cuando el comportamiento de un objeto cambia
+ dependiendo del estado del mismo.
+\end_layout
+
+\begin_layout Itemize
+Estrategia (Strategy): Utilizado para manejar la selección de un algoritmo.
+\end_layout
+
+\begin_layout Itemize
+Método plantilla (Template Method): Algoritmo con varios pasos suministrados
+ por una clase derivada.
+\end_layout
+
+\begin_layout Itemize
+Visitante (Visitor): Operaciones aplicada a elementos d eun aestructura
+ de objetos heterogénea.
+\end_layout
+
+\begin_layout Section*
+MVC
+\end_layout
+
+\begin_layout Standard
+El modelo vista controlador (MVC) es un patrón de arquitectura de software
+ que separa los datos y la lógica de negocio de una aplicación de interfaz
+ de usuario y el modulo encargado de gestionar los eventos y las comunicaciones.
+ Para ello MVC propone la construcción de tres componentes distintos que
+ son el modelo, la vista y el controlador, es decir, por un lado define
+ componentes para la representación de la información, y por otro lado para
+ interacción del usuario.
+ este patrón de diseño se basa en las ideas de reutilización de código y
+ la separación de concepos, características que buscan facilitar la tarea
+ de desarrollos de aplicaciones y su posterior mantenimiento.
+\end_layout
+
+\begin_layout Standard
+A este tipo de patrón se le denomina de 3 capas, aunque se puede mezclar
+ con mas creando n capas.
+ Además de ser un patrón de diseño orientado a las aplicaciones Web.
+\end_layout
+
+\begin_layout Standard
+De manera genérica, los componentes de MVC se podrían definir como sigue:
+\end_layout
+
+\begin_layout Standard
+El Modelo: Es la representación de la información con la cual el sistema
+ opera, por lo tanto gestiona todos los accesos a dichas información, tanto
+ consultas como actualizaciones, implementando también los privilegios de
+ acceso que se hayan descrito en las especificaciones de la aplicación (lógicas
+ de negocio).
+ Envía a la 'vista' aquella parte de la información que en cada momento
+ se le solicita para que sea mostrada (típicamente a un usuario).
+ Las peticiones de acceso o manipulación de información llegan al 'modelo'
+ a través del 'controlador'.
+\end_layout
+
+\begin_layout Standard
+El Controlador: responde a eventos (usualmente acciones del usuario) e invoca
+ peticiones al 'modelo' cuando se hace alguna solicitud sobre la información,
+ por ejemplo, editar un documento o un registro en una base de datos.
+ También puede enviar comandos a su 'vista' asociada si se solicita un cambio
+ en la forma en que se presenta de 'modelo', por ejemplo, desplazamiento
+ o scroll por un documento o por los diferentes registros de una base de
+ datos, por tanto se podría decir que el ' controlador' hace de intermediario
+ entre la 'vista' y el 'modelo'.
+\end_layout
+
+\begin_layout Standard
+La Vista: Presenta el 'modelo' (información y lógica de negcio) en un formato
+ adecuado para interactuar usualmente la interfaz de usuario por tanto requiere
+ de dicho 'modelo' la información que debe representar como salida.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename MVC.jpg
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Figura indica asociación directa en el caso que sea una línea sólida, e
+ indirecta en el caso contrario
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Ejemplo práctico N°1
+\end_layout
+
+\begin_layout Standard
+En el caso de preparar una comida: la receta con las instrucciones es el
+ controlador, el producto en este caso el plato con la comida es la vista
+ y los ingredientes son el modelo.
+\end_layout
+
+\begin_layout Subsection*
+Ejemplo práctico N°2
+\end_layout
+
+\begin_layout Standard
+Otro caso puede ser las notas de un alumno: el aporte final o concentración
+ de notas seria la vista, el libro de clases es el modelo y los cálculos
+ de las notas acumulativas y cálculos de promedio son el controlador.
+\end_layout
+
+\begin_layout Section*
+Conclusión
+\end_layout
+
+\begin_layout Standard
+En este artículo se logró ilustrar sobre las distintas categorías y tipos
+ de patrones de diseño, no debemos 
+\begin_inset Quotes eld
+\end_inset
+
+reinventar la rueda
+\begin_inset Quotes erd
+\end_inset
+
+ en varias de nuestras aplicaciones.
+ Hay muchos trabajos ya realizado, testeado y aceptado que en un entorno
+ similar a un problema que se esta trabajando, ya aporta una solución satisfacto
+ria.
+ ¿Para qué voy a inventar un ladrillo si ya otro lo hizo y el mismo ya fue
+ usado en la edificación de millones de estructuras con éxito? Este modelo
+ de MVC es fácil y flexible a estructuración del código, con datos, implementaci
+ón e interfaz rígidas, y si el framework está bien hecho la seguridad también
+ lo estará y la reutilización y mantención del código será amigable siempre
+ y cuando el desarrollador tenga buenas prácticas en el desarrollo del software.
+\end_layout
+
+\begin_layout Paragraph
+Link
+\end_layout
+
+\begin_layout Paragraph
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Repositorio de la Tarea 3"
+target "https://github.com/FcoHernan/Tarea_3_IS"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
